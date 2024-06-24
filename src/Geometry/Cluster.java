@@ -1,15 +1,20 @@
+package Geometry;
+
 import Geometry.DataPoint;
 
 import java.util.ArrayList;
 
 public class Cluster
 {
+    private static int GLOBAL_ID = 1;
+    private final int id;
     private DataPoint centroid;
     private ArrayList<DataPoint> dataPoints;
 
     public Cluster()
     {
         this.dataPoints = new ArrayList<>();
+        this.id = GLOBAL_ID++;
     }
 
     public Cluster(DataPoint centroid)
@@ -41,5 +46,11 @@ public class Cluster
     public void addDataPoint(DataPoint dataPoint)
     {
         this.dataPoints.add(dataPoint);
+    }
+
+    @Override
+    public String toString()
+    {
+        return "Cluster " + id;
     }
 }

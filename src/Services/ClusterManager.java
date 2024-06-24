@@ -1,5 +1,7 @@
+package Services;
+
+import Geometry.Cluster;
 import Geometry.DataPoint;
-import Services.Logger;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -28,11 +30,13 @@ public class ClusterManager
         addRandomClusters();
 //        addHardcodedClusters();
 
+        Logger.log("");
         for (Cluster cluster : clusters)
         {
-            Logger.logNoNewLine("Cluster " + cluster + ": ");
+            Logger.logNoNewLine(cluster + ": ");
             Logger.log(Arrays.toString(cluster.getCentroid().getCoordinates()));
         }
+        Logger.log("");
     }
 
     private void addRandomClusters()
@@ -60,9 +64,6 @@ public class ClusterManager
     {
         double[] max = getMaxCoordinates();
         double[] min = getMinCoordinates(max);
-
-        Logger.log("MIN: " + Arrays.toString(min));
-        Logger.log("MAX: " + Arrays.toString(max));
 
         double[] res = new double[max.length];
         for (int i = 0; i < res.length; i++)
@@ -160,5 +161,10 @@ public class ClusterManager
             for (DataPoint dataPoint : cluster.getDataPoints())
                 d += dataPoint.findDistanceTo(cluster.getCentroid());
         return d;
+    }
+
+    public ArrayList<Cluster> getClusters()
+    {
+        return clusters;
     }
 }

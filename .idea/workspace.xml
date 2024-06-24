@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b12f470-0e5e-4523-ade9-53b6e4755a08" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Services/Logger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cluster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cluster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClusterManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClusterManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exceptions/WrongNumberOfCoordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exceptions/WrongNumberOfCoordinates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Geometry/MyPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometry/DataPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cluster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometry/Cluster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClusterManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ClusterManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Logger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/FIleDatasetLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/FIleDatasetLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/IDatasetLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/IDatasetLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/IKPicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/IKPicker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/KPickerFromUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/KPickerFromUser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,37 +76,11 @@
       <updated>1717098442819</updated>
       <workItem from="1717098443830" duration="8772000" />
       <workItem from="1717700272874" duration="111000" />
-      <workItem from="1719251247201" duration="8709000" />
+      <workItem from="1719251247201" duration="10011000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ClusterManager.java</url>
-          <line>104</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ClusterManager.java</url>
-          <line>103</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ClusterManager.java</url>
-          <line>110</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
