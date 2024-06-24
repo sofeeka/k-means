@@ -1,3 +1,5 @@
+package Services;
+
 import java.util.Scanner;
 
 public class KPickerFromUser implements IKPicker
@@ -7,6 +9,7 @@ public class KPickerFromUser implements IKPicker
     {
         Scanner scanner = new Scanner(System.in);
         System.out.println("enter k");
-        return scanner.nextInt();
+//        return scanner.nextInt();
+        return 3;
     }
 }
