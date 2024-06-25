@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1b12f470-0e5e-4523-ade9-53b6e4755a08" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cluster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometry/Cluster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClusterManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ClusterManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Geometry/Cluster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Geometry/Cluster.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/ClusterManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ClusterManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +76,7 @@
       <updated>1717098442819</updated>
       <workItem from="1717098443830" duration="8772000" />
       <workItem from="1717700272874" duration="111000" />
-      <workItem from="1719251247201" duration="10011000" />
+      <workItem from="1719251247201" duration="12057000" />
     </task>
     <servers />
   </component>

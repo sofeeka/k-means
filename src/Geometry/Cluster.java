@@ -1,7 +1,5 @@
 package Geometry;
 
-import Geometry.DataPoint;
-
 import java.util.ArrayList;
 
 public class Cluster

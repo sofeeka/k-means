@@ -28,7 +28,6 @@ public class ClusterManager
     private void createInitialClusters()
     {
         addRandomClusters();
-//        addHardcodedClusters();
 
         Logger.log("");
         for (Cluster cluster : clusters)
@@ -43,16 +42,6 @@ public class ClusterManager
     {
         for (int i = 0; i < k; i++)
             clusters.add(getRandomCluster());
-    }
-
-    private void addHardcodedClusters()
-    {
-        double[] c1 = {5.0,3.3,1.4,0.2};
-        double[] c2 = {5.7,2.8,4.1,1.3};
-        double[] c3 = {5.9,3.0,5.1,1.8};
-        clusters.add(new Cluster(new DataPoint(c1)));
-        clusters.add(new Cluster(new DataPoint(c2)));
-        clusters.add(new Cluster(new DataPoint(c3)));
     }
 
     private Cluster getRandomCluster()
@@ -101,15 +90,17 @@ public class ClusterManager
     public boolean runIteration()
     {
         iteration++;
+
+        clearClusters();
         assignDataPointsToClusters();
-        boolean res = recalculateClusters();
+        boolean hasChanges = recalculateClusters();
+
         logIteration();
-        return res;
+        return hasChanges;
     }
 
     private void assignDataPointsToClusters()
     {
-        clearClusters();
         for (DataPoint dataPoint : dataPoints)
         {
             Cluster cluster = clusters.get(0);
@@ -136,16 +127,16 @@ public class ClusterManager
 
     private boolean recalculateClusters()
     {
-        boolean finished = true;
+        boolean hasChanges = false;
         for (Cluster cluster : clusters)
         {
             DataPoint centroid = DataPoint.getMeanCoordinates(cluster.getDataPoints());
             if (centroid == null)
                 continue;
-            finished &= centroid.equals(cluster.getCentroid());
+            hasChanges |= !centroid.equals(cluster.getCentroid());
             cluster.setCentroid(centroid);
         }
-        return finished;
+        return hasChanges;
     }
 
     private void logIteration()
@@ -154,7 +145,7 @@ public class ClusterManager
         Logger.log(calculateSumOfDistances() + "");
     }
 
-    private double calculateSumOfDistances()
+    public double calculateSumOfDistances()
     {
         double d = 0;
         for (Cluster cluster : clusters)
